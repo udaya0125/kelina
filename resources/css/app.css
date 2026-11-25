@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*:focus {
+    outline: none !important; /* Remove default outline */
+    box-shadow: none; /* Remove any box shadow */
+}
+
+/* Optional: Customize focus styles for specific elements */
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none !important; /* Remove outline */
+    box-shadow: none !important; /* Remove box shadow */
+    border-color: inherit !important; /* Reset border color */
+}
+
+
+
+/* ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+ 
+  ::-webkit-scrollbar-thumb {
+    background-color: #f3f4f6; 
+    border-radius: 4px;
+  }
+  
+ 
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #f3f4f6; 
+  }
+  
+ 
+  ::-webkit-scrollbar-track:hover {
+    background-color: #eaeaea; 
+  }
+  
+ 
+  ::-webkit-scrollbar-thumb:active {
+    background-color: #f3f4f6;
+  } */
+
+
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #f3f4f6; /* Change the color as needed */
+    border-radius: 4px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #f3f4f6; /* Change the color as needed */
+  }
+  
+  /* Track on hover */
+  ::-webkit-scrollbar-track:hover {
+    background-color: #eaeaea; /* Change the color as needed */
+  }
+  
+  /* Handle when dragging */
+  ::-webkit-scrollbar-thumb:active {
+    background-color: #f3f4f6; /* Change the color as needed */
+  }
+
+
+  .left-scrollbar-sidebar {
+    direction: rtl;
+    overflow-y: auto;
+  }
+  
+  .left-scrollbar-sidebar > * {
+    direction: ltr;
+  }
+  
+  /* Hide default scrollbar */
+  .left-scrollbar-sidebar::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .left-scrollbar-sidebar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  .left-scrollbar-sidebar::-webkit-scrollbar-thumb {
+    background: #f3f4f6;
+  }
+
+
+
+  .hidden-scrollable-div::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+}
+
+/* Hide scrollbar for IE and Edge */
+.hidden-scrollable-div {
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* Hide scrollbar for Firefox */
+.hidden-scrollable-div {
+    scrollbar-width: none; /* Firefox */
+}
+
+
+.react-select__control,
+.react-select__control--is-focused,
+.react-select__input-container {
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: inherit;
+}
